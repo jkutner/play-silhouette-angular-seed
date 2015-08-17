@@ -10,7 +10,6 @@
   "repository": "https://github.com/mohiva/play-silhouette-angular-seed",
   "success_url": "/",
   "env": {
-    "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-multi",
     "NPM_CONFIG_PRODUCTION": "false",
     "PLAY_CONF_FILE": "application.prod.conf",
     "PLAY_APP_SECRET": "changeme",
@@ -20,5 +19,12 @@
     "GOOGLE_CLIENT_SECRET": "",
     "TWITTER_CONSUMER_KEY": "",
     "TWITTER_CONSUMER_SECRET": ""
-  }
+  },
+  "buildpacks": [
+    {
+      "https://github.com/heroku/heroku-buildpack-ruby.git",
+      "https://github.com/heroku/heroku-buildpack-nodejs.git",
+      https://github.com/heroku/heroku-buildpack-scala.git"
+    }
+  ]
 }
